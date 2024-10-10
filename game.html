@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Tic Tac Toe</h2>
+        <div id="tellTurn">
+
+        </div>
+        
+        <div id="innercontainer">
+            <button onclick =(change(0,0)) onmouseover=(magic(0,0)) class="cont" id="1"></button>
+            <button onclick =(change(0,1)) onmouseover=(magic(0,1)) class="cont" id="2"></button>
+            <button onclick =(change(0,2)) onmouseover=(magic(0,2)) class="cont" id="3"></button>
+            <button onclick =(change(1,0)) onmouseover=(magic(1,0)) class="cont" id="4"></button>
+            <button onclick =(change(1,1)) onmouseover=(magic(1,1)) class="cont" id="5"></button>
+            <button onclick =(change(1,2)) onmouseover=(magic(1,2)) class="cont" id="6"></button>
+            <button onclick =(change(2,0)) onmouseover=(magic(2,0)) class="cont" id="7"></button>
+            <button onclick =(change(2,1)) onmouseover=(magic(2,1)) class="cont" id="8"></button>
+            <button onclick =(change(2,2)) onmouseover=(magic(2,2)) class="cont" id="9"></button>
+        </div>
+        <div id="butt">
+            <button onclick=restart()>Restart</button>
+        </div>
+    </div>
+    
+
+    <script src="game.js"></script>
+</body>
+</html>
