@@ -84,18 +84,22 @@ function change(row,col){
     currbox = curr[countvar];
     if(check(arr) == 0){
         currbox.innerText = "O";
-        alert("0 wins the game");
-        restart();
+        let banner = document.getElementById("banner");
+        banner.innerText = "0 wins the game";
+        
 
     }
     else if(check(arr) == 1){
         currbox.innerText = "X";
-        alert("X wins the game");
-        restart();
+        let banner = document.getElementById("banner");
+        banner.innerText = "X wins the game";
+        
+        
     }
     if(chances >= 9){
-        alert("Nobody wins");
-        restart();
+        let banner = document.getElementById("banner");
+        banner.innerText = "Nobody Wins";
+        
     }
 
 }
@@ -117,7 +121,9 @@ function restart(){
     arr[0] = new Array(-1,-1,-1);
     arr[1] = new Array(-1,-1,-1);
     arr[2] = new Array(-1,-1,-1);
-
+    let banner = document.getElementById("banner");
+        
+    banner.innerText = "";
 
     let curr = document.getElementsByClassName("cont");
     for(i = 0 ; i < 9 ;i++){

@@ -3,6 +3,10 @@ body{
     align-items: center;
     justify-content: center;
     background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #container{
     height: 400px;
@@ -16,7 +20,7 @@ body{
     border-radius: 10px;
     /* box-sizing: border-box; */
 }
-h1{
+div > h1{
     position: relative;
     bottom: 30px;
     color:#19647e;
